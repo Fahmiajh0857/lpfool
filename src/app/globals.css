@@ -33,10 +33,11 @@ body {
   background-size: 48px 48px;
 }
 
-/* Wallet dropdown: keep it aligned right */
+/* Wallet dropdown alignment */
 .wallet-adapter-dropdown {
   position: relative !important;
 }
+
 .wallet-adapter-dropdown-list {
   right: 0 !important;
   left: auto !important;
