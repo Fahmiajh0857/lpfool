@@ -1,5 +1,46 @@
 @import "tailwindcss";
 
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import "@solana/wallet-adapter-react-ui/styles.css";
+
+.wallet-adapter-dropdown {
+  position: relative !important;
+}
+.wallet-adapter-dropdown-list {
+  right: 0 !important;
+  left: auto !important;
+}
+
+:root {
+  --bg: 11 11 12;        /* #0B0B0C */
+  --card: 17 17 19;      /* #111113 */
+  --border: 28 28 31;    /* #1C1C1F */
+  --text: 242 242 243;   /* #F2F2F3 */
+  --muted: 139 139 147;  /* #8B8B93 */
+  --accent: 255 106 0;   /* #FF6A00 */
+  --danger: 255 59 59;
+  --success: 0 255 163;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  color: rgb(var(--text));
+  background: rgb(var(--bg));
+}
+
+/* subtle grid background (optional) */
+.bg-grid {
+  background-image:
+    linear-gradient(to right, rgba(255,255,255,0.04) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255,255,255,0.04) 1px, transparent 1px);
+  background-size: 48px 48px;
+}
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
